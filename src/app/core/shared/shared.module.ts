@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
+import { ApiService } from './services/api.service';
+
 @NgModule({
   imports: [
       HttpClientModule,
@@ -17,7 +19,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     RouterModule,
     NotFoundComponent
   ],
-  providers: []
+  providers: [ApiService]
 })
 
 export class SharedModule {
